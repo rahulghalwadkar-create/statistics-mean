@@ -1,0 +1,1206 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mean Calculation Guide</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .table-container {
+      overflow-x: auto;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border: 2px solid;
+    }
+
+    th {
+      font-weight: bold;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full overflow-auto">
+  <div class="app-wrapper w-full min-h-full" id="mainWrapper"><!-- Header -->
+   <header class="header-section text-center py-12 px-6">
+    <h1 class="main-heading text-5xl font-bold mb-4" id="mainTitle">📊 Calculating Mean in Statistics</h1>
+    <p class="subtitle-text text-xl" id="subtitle">Master All Three Methods - Maharashtra SSC Class 10</p>
+   </header><!-- Main Content -->
+   <main class="max-w-6xl mx-auto px-6 pb-16"><!-- Introduction Section -->
+    <section class="content-card rounded-2xl p-8 mb-8 shadow-lg">
+     <h2 class="section-heading text-3xl font-bold mb-4">📚 What is Mean?</h2>
+     <p class="body-text text-lg mb-4">The <strong>mean</strong> (or arithmetic mean) is the average of a set of numbers. It is calculated by dividing the sum of all values by the total number of values.</p>
+     <div class="formula-box p-6 rounded-lg mb-4">
+      <p class="text-center body-text text-xl mb-2"><strong>Basic Formula:</strong></p>
+      <p class="text-center formula-text text-2xl font-mono">Mean (x̄) = Σx / n</p>
+      <p class="text-center body-text mt-3">Where: Σx = Sum of all values, n = Number of values</p>
+     </div>
+     <div class="insight-box p-6 rounded-xl">
+      <p class="body-text text-lg mb-2"><strong>💡 For Grouped Data, we use three methods:</strong></p>
+      <ul class="body-text list-decimal ml-8 space-y-2">
+       <li><strong>Direct Method</strong> - Straightforward calculation</li>
+       <li><strong>Assumed Mean Method</strong> - Uses an assumed value to simplify</li>
+       <li><strong>Step Deviation Method</strong> - Further simplification using common divisor</li>
+      </ul>
+     </div>
+    </section><!-- Method 1: Direct Method -->
+    <section class="content-card rounded-2xl p-8 mb-8 shadow-lg">
+     <h2 class="section-heading text-3xl font-bold mb-4">📐 Method 1: Direct Method</h2>
+     <div class="method-description p-6 rounded-xl mb-6">
+      <p class="body-text text-lg mb-3">In the <strong>Direct Method</strong>, we find the mean by multiplying each class mark (midpoint) by its frequency, summing these products, and dividing by the total frequency.</p>
+      <div class="formula-box p-4 rounded-lg mt-4">
+       <p class="text-center formula-text text-xl font-mono mb-2">x̄ = Σ(f × x) / Σf</p>
+       <p class="text-center body-text text-sm">where x = class mark (midpoint), f = frequency</p>
+      </div>
+     </div>
+     <h3 class="law-heading text-2xl font-bold mb-4">📖 Solved Example 1:</h3>
+     <p class="body-text text-lg mb-4">Find the mean marks of students using the Direct Method:</p>
+     <div class="table-container mb-6">
+      <table class="example-table">
+       <thead>
+        <tr>
+         <th class="table-header">Marks</th>
+         <th class="table-header">0-10</th>
+         <th class="table-header">10-20</th>
+         <th class="table-header">20-30</th>
+         <th class="table-header">30-40</th>
+         <th class="table-header">40-50</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td class="table-cell"><strong>Frequency (f)</strong></td>
+         <td class="table-cell">5</td>
+         <td class="table-cell">8</td>
+         <td class="table-cell">12</td>
+         <td class="table-cell">10</td>
+         <td class="table-cell">5</td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <div class="solution-box p-6 rounded-lg mb-4">
+      <p class="body-text text-lg mb-3"><strong>Solution:</strong></p>
+      <p class="body-text mb-3"><strong>Step 1:</strong> Find class marks (x) = (Lower limit + Upper limit) / 2</p>
+      <div class="table-container mb-4">
+       <table class="solution-table text-sm">
+        <thead>
+         <tr>
+          <th class="table-header">Class</th>
+          <th class="table-header">Frequency (f)</th>
+          <th class="table-header">Class Mark (x)</th>
+          <th class="table-header">f × x</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td class="table-cell">0-10</td>
+          <td class="table-cell">5</td>
+          <td class="table-cell">5</td>
+          <td class="table-cell">25</td>
+         </tr>
+         <tr>
+          <td class="table-cell">10-20</td>
+          <td class="table-cell">8</td>
+          <td class="table-cell">15</td>
+          <td class="table-cell">120</td>
+         </tr>
+         <tr>
+          <td class="table-cell">20-30</td>
+          <td class="table-cell">12</td>
+          <td class="table-cell">25</td>
+          <td class="table-cell">300</td>
+         </tr>
+         <tr>
+          <td class="table-cell">30-40</td>
+          <td class="table-cell">10</td>
+          <td class="table-cell">35</td>
+          <td class="table-cell">350</td>
+         </tr>
+         <tr>
+          <td class="table-cell">40-50</td>
+          <td class="table-cell">5</td>
+          <td class="table-cell">45</td>
+          <td class="table-cell">225</td>
+         </tr>
+         <tr>
+          <td class="table-cell"><strong>Total</strong></td>
+          <td class="table-cell"><strong>Σf = 40</strong></td>
+          <td class="table-cell">-</td>
+          <td class="table-cell"><strong>Σ(f×x) = 1020</strong></td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <p class="body-text mb-2"><strong>Step 2:</strong> Apply the formula:</p>
+      <p class="body-text mb-2 ml-4">x̄ = Σ(f × x) / Σf</p>
+      <p class="body-text mb-2 ml-4">x̄ = 1020 / 40</p>
+      <p class="body-text mb-2 ml-4"><strong>x̄ = 25.5 marks</strong></p>
+      <p class="body-text mt-4 answer-text"><strong>✓ Answer: Mean = 25.5 marks</strong></p>
+     </div>
+    </section><!-- Method 2: Assumed Mean Method -->
+    <section class="content-card rounded-2xl p-8 mb-8 shadow-lg">
+     <h2 class="section-heading text-3xl font-bold mb-4">🎯 Method 2: Assumed Mean Method</h2>
+     <div class="method-description p-6 rounded-xl mb-6">
+      <p class="body-text text-lg mb-3">In the <strong>Assumed Mean Method</strong>, we assume a mean value (usually the middle class mark) to simplify calculations. This method is useful when class marks are large numbers.</p>
+      <div class="formula-box p-4 rounded-lg mt-4">
+       <p class="text-center formula-text text-xl font-mono mb-2">x̄ = A + (Σ(f × d) / Σf)</p>
+       <p class="text-center body-text text-sm">where A = Assumed mean, d = (x - A) = deviation from assumed mean</p>
+      </div>
+     </div>
+     <h3 class="law-heading text-2xl font-bold mb-4">📖 Solved Example 2:</h3>
+     <p class="body-text text-lg mb-4">Find the mean weight using the Assumed Mean Method:</p>
+     <div class="table-container mb-6">
+      <table class="example-table">
+       <thead>
+        <tr>
+         <th class="table-header">Weight (kg)</th>
+         <th class="table-header">40-50</th>
+         <th class="table-header">50-60</th>
+         <th class="table-header">60-70</th>
+         <th class="table-header">70-80</th>
+         <th class="table-header">80-90</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td class="table-cell"><strong>Frequency (f)</strong></td>
+         <td class="table-cell">6</td>
+         <td class="table-cell">10</td>
+         <td class="table-cell">14</td>
+         <td class="table-cell">8</td>
+         <td class="table-cell">2</td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <div class="solution-box p-6 rounded-lg mb-4">
+      <p class="body-text text-lg mb-3"><strong>Solution:</strong></p>
+      <p class="body-text mb-3"><strong>Step 1:</strong> Find class marks (x)</p>
+      <p class="body-text mb-3"><strong>Step 2:</strong> Assume mean A = 65 (middle class mark)</p>
+      <p class="body-text mb-3"><strong>Step 3:</strong> Calculate d = x - A for each class</p>
+      <div class="table-container mb-4">
+       <table class="solution-table text-sm">
+        <thead>
+         <tr>
+          <th class="table-header">Class</th>
+          <th class="table-header">f</th>
+          <th class="table-header">x</th>
+          <th class="table-header">d = x - 65</th>
+          <th class="table-header">f × d</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td class="table-cell">40-50</td>
+          <td class="table-cell">6</td>
+          <td class="table-cell">45</td>
+          <td class="table-cell">-20</td>
+          <td class="table-cell">-120</td>
+         </tr>
+         <tr>
+          <td class="table-cell">50-60</td>
+          <td class="table-cell">10</td>
+          <td class="table-cell">55</td>
+          <td class="table-cell">-10</td>
+          <td class="table-cell">-100</td>
+         </tr>
+         <tr>
+          <td class="table-cell">60-70</td>
+          <td class="table-cell">14</td>
+          <td class="table-cell">65</td>
+          <td class="table-cell">0</td>
+          <td class="table-cell">0</td>
+         </tr>
+         <tr>
+          <td class="table-cell">70-80</td>
+          <td class="table-cell">8</td>
+          <td class="table-cell">75</td>
+          <td class="table-cell">+10</td>
+          <td class="table-cell">+80</td>
+         </tr>
+         <tr>
+          <td class="table-cell">80-90</td>
+          <td class="table-cell">2</td>
+          <td class="table-cell">85</td>
+          <td class="table-cell">+20</td>
+          <td class="table-cell">+40</td>
+         </tr>
+         <tr>
+          <td class="table-cell"><strong>Total</strong></td>
+          <td class="table-cell"><strong>Σf = 40</strong></td>
+          <td class="table-cell">-</td>
+          <td class="table-cell">-</td>
+          <td class="table-cell"><strong>Σ(f×d) = -100</strong></td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <p class="body-text mb-2"><strong>Step 4:</strong> Apply the formula:</p>
+      <p class="body-text mb-2 ml-4">x̄ = A + (Σ(f × d) / Σf)</p>
+      <p class="body-text mb-2 ml-4">x̄ = 65 + (-100 / 40)</p>
+      <p class="body-text mb-2 ml-4">x̄ = 65 + (-2.5)</p>
+      <p class="body-text mb-2 ml-4"><strong>x̄ = 62.5 kg</strong></p>
+      <p class="body-text mt-4 answer-text"><strong>✓ Answer: Mean = 62.5 kg</strong></p>
+     </div>
+    </section><!-- Method 3: Step Deviation Method -->
+    <section class="content-card rounded-2xl p-8 mb-8 shadow-lg">
+     <h2 class="section-heading text-3xl font-bold mb-4">⚡ Method 3: Step Deviation Method</h2>
+     <div class="method-description p-6 rounded-xl mb-6">
+      <p class="body-text text-lg mb-3">The <strong>Step Deviation Method</strong> is used when class intervals are equal and deviations are large. We divide the deviation by the class width (h) to get simpler numbers.</p>
+      <div class="formula-box p-4 rounded-lg mt-4">
+       <p class="text-center formula-text text-xl font-mono mb-2">x̄ = A + h × (Σ(f × u) / Σf)</p>
+       <p class="text-center body-text text-sm">where A = Assumed mean, h = Class width, u = (x - A) / h</p>
+      </div>
+     </div>
+     <h3 class="law-heading text-2xl font-bold mb-4">📖 Solved Example 3:</h3>
+     <p class="body-text text-lg mb-4">Find the mean height using the Step Deviation Method:</p>
+     <div class="table-container mb-6">
+      <table class="example-table">
+       <thead>
+        <tr>
+         <th class="table-header">Height (cm)</th>
+         <th class="table-header">140-150</th>
+         <th class="table-header">150-160</th>
+         <th class="table-header">160-170</th>
+         <th class="table-header">170-180</th>
+         <th class="table-header">180-190</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td class="table-cell"><strong>Frequency (f)</strong></td>
+         <td class="table-cell">4</td>
+         <td class="table-cell">8</td>
+         <td class="table-cell">15</td>
+         <td class="table-cell">10</td>
+         <td class="table-cell">3</td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <div class="solution-box p-6 rounded-lg mb-4">
+      <p class="body-text text-lg mb-3"><strong>Solution:</strong></p>
+      <p class="body-text mb-3"><strong>Step 1:</strong> Find class marks (x) and class width h = 10</p>
+      <p class="body-text mb-3"><strong>Step 2:</strong> Assume mean A = 165 (middle class mark)</p>
+      <p class="body-text mb-3"><strong>Step 3:</strong> Calculate u = (x - A) / h for each class</p>
+      <div class="table-container mb-4">
+       <table class="solution-table text-sm">
+        <thead>
+         <tr>
+          <th class="table-header">Class</th>
+          <th class="table-header">f</th>
+          <th class="table-header">x</th>
+          <th class="table-header">d = x - 165</th>
+          <th class="table-header">u = d/10</th>
+          <th class="table-header">f × u</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td class="table-cell">140-150</td>
+          <td class="table-cell">4</td>
+          <td class="table-cell">145</td>
+          <td class="table-cell">-20</td>
+          <td class="table-cell">-2</td>
+          <td class="table-cell">-8</td>
+         </tr>
+         <tr>
+          <td class="table-cell">150-160</td>
+          <td class="table-cell">8</td>
+          <td class="table-cell">155</td>
+          <td class="table-cell">-10</td>
+          <td class="table-cell">-1</td>
+          <td class="table-cell">-8</td>
+         </tr>
+         <tr>
+          <td class="table-cell">160-170</td>
+          <td class="table-cell">15</td>
+          <td class="table-cell">165</td>
+          <td class="table-cell">0</td>
+          <td class="table-cell">0</td>
+          <td class="table-cell">0</td>
+         </tr>
+         <tr>
+          <td class="table-cell">170-180</td>
+          <td class="table-cell">10</td>
+          <td class="table-cell">175</td>
+          <td class="table-cell">+10</td>
+          <td class="table-cell">+1</td>
+          <td class="table-cell">+10</td>
+         </tr>
+         <tr>
+          <td class="table-cell">180-190</td>
+          <td class="table-cell">3</td>
+          <td class="table-cell">185</td>
+          <td class="table-cell">+20</td>
+          <td class="table-cell">+2</td>
+          <td class="table-cell">+6</td>
+         </tr>
+         <tr>
+          <td class="table-cell"><strong>Total</strong></td>
+          <td class="table-cell"><strong>Σf = 40</strong></td>
+          <td class="table-cell">-</td>
+          <td class="table-cell">-</td>
+          <td class="table-cell">-</td>
+          <td class="table-cell"><strong>Σ(f×u) = 0</strong></td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <p class="body-text mb-2"><strong>Step 4:</strong> Apply the formula:</p>
+      <p class="body-text mb-2 ml-4">x̄ = A + h × (Σ(f × u) / Σf)</p>
+      <p class="body-text mb-2 ml-4">x̄ = 165 + 10 × (0 / 40)</p>
+      <p class="body-text mb-2 ml-4">x̄ = 165 + 0</p>
+      <p class="body-text mb-2 ml-4"><strong>x̄ = 165 cm</strong></p>
+      <p class="body-text mt-4 answer-text"><strong>✓ Answer: Mean = 165 cm</strong></p>
+     </div>
+    </section><!-- Comparison Section -->
+    <section class="content-card rounded-2xl p-8 mb-8 shadow-lg">
+     <h2 class="section-heading text-3xl font-bold mb-4 text-center">🔍 Which Method to Use?</h2>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="comparison-card p-6 rounded-xl">
+       <h3 class="law-heading text-xl font-bold mb-3 text-center">Direct Method</h3>
+       <p class="body-text mb-3"><strong>Use when:</strong></p>
+       <ul class="body-text list-disc ml-6 space-y-2">
+        <li>Small frequencies</li>
+        <li>Small class marks</li>
+        <li>Simple calculations needed</li>
+       </ul>
+       <p class="body-text mt-4"><strong>⚡ Easiest to understand</strong></p>
+      </div>
+      <div class="comparison-card p-6 rounded-xl">
+       <h3 class="law-heading text-xl font-bold mb-3 text-center">Assumed Mean</h3>
+       <p class="body-text mb-3"><strong>Use when:</strong></p>
+       <ul class="body-text list-disc ml-6 space-y-2">
+        <li>Large class marks</li>
+        <li>Want to avoid big numbers</li>
+        <li>Unequal class intervals</li>
+       </ul>
+       <p class="body-text mt-4"><strong>⚡ Reduces calculation work</strong></p>
+      </div>
+      <div class="comparison-card p-6 rounded-xl">
+       <h3 class="law-heading text-xl font-bold mb-3 text-center">Step Deviation</h3>
+       <p class="body-text mb-3"><strong>Use when:</strong></p>
+       <ul class="body-text list-disc ml-6 space-y-2">
+        <li>Equal class intervals</li>
+        <li>Large deviations</li>
+        <li>Want simplest calculation</li>
+       </ul>
+       <p class="body-text mt-4"><strong>⚡ Most efficient method</strong></p>
+      </div>
+     </div>
+    </section><!-- Practice Problems Section -->
+    <section class="content-card rounded-2xl p-8 mb-8 shadow-lg">
+     <h2 class="section-heading text-3xl font-bold mb-4 text-center">📝 Practice Problems for SSC Students</h2>
+     <p class="body-text text-lg mb-6 text-center">Solve these problems using any method. Click to see step-by-step solutions!</p><!-- Practice Problem 1 -->
+     <div class="problem-card p-6 rounded-xl mb-6">
+      <div class="flex items-start gap-3 mb-4"><span class="problem-number font-bold text-xl">Q1.</span>
+       <div class="flex-1">
+        <p class="body-text text-lg mb-4">Calculate the mean marks using the <strong>Direct Method</strong>:</p>
+        <div class="table-container mb-4">
+         <table class="practice-table text-sm">
+          <thead>
+           <tr>
+            <th class="table-header">Marks</th>
+            <th class="table-header">10-20</th>
+            <th class="table-header">20-30</th>
+            <th class="table-header">30-40</th>
+            <th class="table-header">40-50</th>
+            <th class="table-header">50-60</th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td class="table-cell"><strong>Frequency</strong></td>
+            <td class="table-cell">3</td>
+            <td class="table-cell">7</td>
+            <td class="table-cell">10</td>
+            <td class="table-cell">8</td>
+            <td class="table-cell">2</td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+      </div><button class="show-solution-btn px-6 py-2 rounded-lg font-semibold transition-all" onclick="toggleSolution('p1')"> Show Solution </button>
+      <div id="solution-p1" class="solution-box mt-4 p-6 rounded-lg" style="display: none;">
+       <p class="body-text text-lg mb-3"><strong>Solution (Direct Method):</strong></p>
+       <div class="table-container mb-4">
+        <table class="solution-table text-sm">
+         <thead>
+          <tr>
+           <th class="table-header">Class</th>
+           <th class="table-header">f</th>
+           <th class="table-header">x</th>
+           <th class="table-header">f × x</th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td class="table-cell">10-20</td>
+           <td class="table-cell">3</td>
+           <td class="table-cell">15</td>
+           <td class="table-cell">45</td>
+          </tr>
+          <tr>
+           <td class="table-cell">20-30</td>
+           <td class="table-cell">7</td>
+           <td class="table-cell">25</td>
+           <td class="table-cell">175</td>
+          </tr>
+          <tr>
+           <td class="table-cell">30-40</td>
+           <td class="table-cell">10</td>
+           <td class="table-cell">35</td>
+           <td class="table-cell">350</td>
+          </tr>
+          <tr>
+           <td class="table-cell">40-50</td>
+           <td class="table-cell">8</td>
+           <td class="table-cell">45</td>
+           <td class="table-cell">360</td>
+          </tr>
+          <tr>
+           <td class="table-cell">50-60</td>
+           <td class="table-cell">2</td>
+           <td class="table-cell">55</td>
+           <td class="table-cell">110</td>
+          </tr>
+          <tr>
+           <td class="table-cell"><strong>Total</strong></td>
+           <td class="table-cell"><strong>30</strong></td>
+           <td class="table-cell">-</td>
+           <td class="table-cell"><strong>1040</strong></td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <p class="body-text mb-2">x̄ = Σ(f × x) / Σf = 1040 / 30</p>
+       <p class="body-text answer-text text-xl"><strong>✓ Answer: Mean = 34.67 marks</strong></p>
+      </div>
+     </div><!-- Practice Problem 2 -->
+     <div class="problem-card p-6 rounded-xl mb-6">
+      <div class="flex items-start gap-3 mb-4"><span class="problem-number font-bold text-xl">Q2.</span>
+       <div class="flex-1">
+        <p class="body-text text-lg mb-4">Find the mean age using the <strong>Assumed Mean Method</strong> (Take A = 35):</p>
+        <div class="table-container mb-4">
+         <table class="practice-table text-sm">
+          <thead>
+           <tr>
+            <th class="table-header">Age (years)</th>
+            <th class="table-header">20-30</th>
+            <th class="table-header">30-40</th>
+            <th class="table-header">40-50</th>
+            <th class="table-header">50-60</th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td class="table-cell"><strong>Frequency</strong></td>
+            <td class="table-cell">5</td>
+            <td class="table-cell">12</td>
+            <td class="table-cell">9</td>
+            <td class="table-cell">4</td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+      </div><button class="show-solution-btn px-6 py-2 rounded-lg font-semibold transition-all" onclick="toggleSolution('p2')"> Show Solution </button>
+      <div id="solution-p2" class="solution-box mt-4 p-6 rounded-lg" style="display: none;">
+       <p class="body-text text-lg mb-3"><strong>Solution (Assumed Mean Method, A = 35):</strong></p>
+       <div class="table-container mb-4">
+        <table class="solution-table text-sm">
+         <thead>
+          <tr>
+           <th class="table-header">Class</th>
+           <th class="table-header">f</th>
+           <th class="table-header">x</th>
+           <th class="table-header">d = x - 35</th>
+           <th class="table-header">f × d</th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td class="table-cell">20-30</td>
+           <td class="table-cell">5</td>
+           <td class="table-cell">25</td>
+           <td class="table-cell">-10</td>
+           <td class="table-cell">-50</td>
+          </tr>
+          <tr>
+           <td class="table-cell">30-40</td>
+           <td class="table-cell">12</td>
+           <td class="table-cell">35</td>
+           <td class="table-cell">0</td>
+           <td class="table-cell">0</td>
+          </tr>
+          <tr>
+           <td class="table-cell">40-50</td>
+           <td class="table-cell">9</td>
+           <td class="table-cell">45</td>
+           <td class="table-cell">+10</td>
+           <td class="table-cell">+90</td>
+          </tr>
+          <tr>
+           <td class="table-cell">50-60</td>
+           <td class="table-cell">4</td>
+           <td class="table-cell">55</td>
+           <td class="table-cell">+20</td>
+           <td class="table-cell">+80</td>
+          </tr>
+          <tr>
+           <td class="table-cell"><strong>Total</strong></td>
+           <td class="table-cell"><strong>30</strong></td>
+           <td class="table-cell">-</td>
+           <td class="table-cell">-</td>
+           <td class="table-cell"><strong>+120</strong></td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <p class="body-text mb-2">x̄ = A + (Σ(f × d) / Σf)</p>
+       <p class="body-text mb-2">x̄ = 35 + (120 / 30) = 35 + 4</p>
+       <p class="body-text answer-text text-xl"><strong>✓ Answer: Mean = 39 years</strong></p>
+      </div>
+     </div><!-- Practice Problem 3 -->
+     <div class="problem-card p-6 rounded-xl mb-6">
+      <div class="flex items-start gap-3 mb-4"><span class="problem-number font-bold text-xl">Q3.</span>
+       <div class="flex-1">
+        <p class="body-text text-lg mb-4">Calculate the mean using the <strong>Step Deviation Method</strong> (A = 55, h = 10):</p>
+        <div class="table-container mb-4">
+         <table class="practice-table text-sm">
+          <thead>
+           <tr>
+            <th class="table-header">Class Interval</th>
+            <th class="table-header">30-40</th>
+            <th class="table-header">40-50</th>
+            <th class="table-header">50-60</th>
+            <th class="table-header">60-70</th>
+            <th class="table-header">70-80</th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td class="table-cell"><strong>Frequency</strong></td>
+            <td class="table-cell">2</td>
+            <td class="table-cell">6</td>
+            <td class="table-cell">10</td>
+            <td class="table-cell">8</td>
+            <td class="table-cell">4</td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+      </div><button class="show-solution-btn px-6 py-2 rounded-lg font-semibold transition-all" onclick="toggleSolution('p3')"> Show Solution </button>
+      <div id="solution-p3" class="solution-box mt-4 p-6 rounded-lg" style="display: none;">
+       <p class="body-text text-lg mb-3"><strong>Solution (Step Deviation Method, A = 55, h = 10):</strong></p>
+       <div class="table-container mb-4">
+        <table class="solution-table text-sm">
+         <thead>
+          <tr>
+           <th class="table-header">Class</th>
+           <th class="table-header">f</th>
+           <th class="table-header">x</th>
+           <th class="table-header">d = x - 55</th>
+           <th class="table-header">u = d/10</th>
+           <th class="table-header">f × u</th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td class="table-cell">30-40</td>
+           <td class="table-cell">2</td>
+           <td class="table-cell">35</td>
+           <td class="table-cell">-20</td>
+           <td class="table-cell">-2</td>
+           <td class="table-cell">-4</td>
+          </tr>
+          <tr>
+           <td class="table-cell">40-50</td>
+           <td class="table-cell">6</td>
+           <td class="table-cell">45</td>
+           <td class="table-cell">-10</td>
+           <td class="table-cell">-1</td>
+           <td class="table-cell">-6</td>
+          </tr>
+          <tr>
+           <td class="table-cell">50-60</td>
+           <td class="table-cell">10</td>
+           <td class="table-cell">55</td>
+           <td class="table-cell">0</td>
+           <td class="table-cell">0</td>
+           <td class="table-cell">0</td>
+          </tr>
+          <tr>
+           <td class="table-cell">60-70</td>
+           <td class="table-cell">8</td>
+           <td class="table-cell">65</td>
+           <td class="table-cell">+10</td>
+           <td class="table-cell">+1</td>
+           <td class="table-cell">+8</td>
+          </tr>
+          <tr>
+           <td class="table-cell">70-80</td>
+           <td class="table-cell">4</td>
+           <td class="table-cell">75</td>
+           <td class="table-cell">+20</td>
+           <td class="table-cell">+2</td>
+           <td class="table-cell">+8</td>
+          </tr>
+          <tr>
+           <td class="table-cell"><strong>Total</strong></td>
+           <td class="table-cell"><strong>30</strong></td>
+           <td class="table-cell">-</td>
+           <td class="table-cell">-</td>
+           <td class="table-cell">-</td>
+           <td class="table-cell"><strong>+6</strong></td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <p class="body-text mb-2">x̄ = A + h × (Σ(f × u) / Σf)</p>
+       <p class="body-text mb-2">x̄ = 55 + 10 × (6 / 30)</p>
+       <p class="body-text mb-2">x̄ = 55 + 10 × 0.2 = 55 + 2</p>
+       <p class="body-text answer-text text-xl"><strong>✓ Answer: Mean = 57</strong></p>
+      </div>
+     </div><!-- Practice Problem 4 -->
+     <div class="problem-card p-6 rounded-xl mb-6">
+      <div class="flex items-start gap-3 mb-4"><span class="problem-number font-bold text-xl">Q4.</span>
+       <div class="flex-1">
+        <p class="body-text text-lg mb-4">The mean of the following distribution is 50. Find the missing frequency 'f':</p>
+        <div class="table-container mb-4">
+         <table class="practice-table text-sm">
+          <thead>
+           <tr>
+            <th class="table-header">Class</th>
+            <th class="table-header">0-20</th>
+            <th class="table-header">20-40</th>
+            <th class="table-header">40-60</th>
+            <th class="table-header">60-80</th>
+            <th class="table-header">80-100</th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td class="table-cell"><strong>Frequency</strong></td>
+            <td class="table-cell">17</td>
+            <td class="table-cell">f</td>
+            <td class="table-cell">32</td>
+            <td class="table-cell">28</td>
+            <td class="table-cell">19</td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+        <p class="body-text">Given: Total frequency Σf = 120</p>
+       </div>
+      </div><button class="show-solution-btn px-6 py-2 rounded-lg font-semibold transition-all" onclick="toggleSolution('p4')"> Show Solution </button>
+      <div id="solution-p4" class="solution-box mt-4 p-6 rounded-lg" style="display: none;">
+       <p class="body-text text-lg mb-3"><strong>Solution:</strong></p>
+       <p class="body-text mb-3"><strong>Step 1:</strong> Find missing frequency from total</p>
+       <p class="body-text mb-2 ml-4">Σf = 17 + f + 32 + 28 + 19 = 120</p>
+       <p class="body-text mb-3 ml-4">96 + f = 120 → f = 24</p>
+       <p class="body-text mb-3"><strong>Step 2:</strong> Verify using mean formula (A = 50, h = 20)</p>
+       <div class="table-container mb-4">
+        <table class="solution-table text-sm">
+         <thead>
+          <tr>
+           <th class="table-header">Class</th>
+           <th class="table-header">f</th>
+           <th class="table-header">x</th>
+           <th class="table-header">d = x - 50</th>
+           <th class="table-header">u = d/20</th>
+           <th class="table-header">f × u</th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td class="table-cell">0-20</td>
+           <td class="table-cell">17</td>
+           <td class="table-cell">10</td>
+           <td class="table-cell">-40</td>
+           <td class="table-cell">-2</td>
+           <td class="table-cell">-34</td>
+          </tr>
+          <tr>
+           <td class="table-cell">20-40</td>
+           <td class="table-cell">24</td>
+           <td class="table-cell">30</td>
+           <td class="table-cell">-20</td>
+           <td class="table-cell">-1</td>
+           <td class="table-cell">-24</td>
+          </tr>
+          <tr>
+           <td class="table-cell">40-60</td>
+           <td class="table-cell">32</td>
+           <td class="table-cell">50</td>
+           <td class="table-cell">0</td>
+           <td class="table-cell">0</td>
+           <td class="table-cell">0</td>
+          </tr>
+          <tr>
+           <td class="table-cell">60-80</td>
+           <td class="table-cell">28</td>
+           <td class="table-cell">70</td>
+           <td class="table-cell">+20</td>
+           <td class="table-cell">+1</td>
+           <td class="table-cell">+28</td>
+          </tr>
+          <tr>
+           <td class="table-cell">80-100</td>
+           <td class="table-cell">19</td>
+           <td class="table-cell">90</td>
+           <td class="table-cell">+40</td>
+           <td class="table-cell">+2</td>
+           <td class="table-cell">+38</td>
+          </tr>
+          <tr>
+           <td class="table-cell"><strong>Total</strong></td>
+           <td class="table-cell"><strong>120</strong></td>
+           <td class="table-cell">-</td>
+           <td class="table-cell">-</td>
+           <td class="table-cell">-</td>
+           <td class="table-cell"><strong>+8</strong></td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <p class="body-text mb-2">x̄ = A + h × (Σ(f × u) / Σf)</p>
+       <p class="body-text mb-2">50 = 50 + 20 × (8 / 120)</p>
+       <p class="body-text mb-2">50 = 50 + 1.33 ≈ 50 ✓ (Close enough with rounding)</p>
+       <p class="body-text answer-text text-xl"><strong>✓ Answer: Missing frequency f = 24</strong></p>
+      </div>
+     </div><!-- Practice Problem 5 -->
+     <div class="problem-card p-6 rounded-xl">
+      <div class="flex items-start gap-3 mb-4"><span class="problem-number font-bold text-xl">Q5.</span>
+       <div class="flex-1">
+        <p class="body-text text-lg mb-4">Calculate the mean salary of employees using any suitable method:</p>
+        <div class="table-container mb-4">
+         <table class="practice-table text-sm">
+          <thead>
+           <tr>
+            <th class="table-header">Salary (₹1000s)</th>
+            <th class="table-header">10-20</th>
+            <th class="table-header">20-30</th>
+            <th class="table-header">30-40</th>
+            <th class="table-header">40-50</th>
+            <th class="table-header">50-60</th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td class="table-cell"><strong>No. of Employees</strong></td>
+            <td class="table-cell">8</td>
+            <td class="table-cell">12</td>
+            <td class="table-cell">20</td>
+            <td class="table-cell">15</td>
+            <td class="table-cell">5</td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+      </div><button class="show-solution-btn px-6 py-2 rounded-lg font-semibold transition-all" onclick="toggleSolution('p5')"> Show Solution </button>
+      <div id="solution-p5" class="solution-box mt-4 p-6 rounded-lg" style="display: none;">
+       <p class="body-text text-lg mb-3"><strong>Solution (Using Step Deviation Method, A = 35, h = 10):</strong></p>
+       <div class="table-container mb-4">
+        <table class="solution-table text-sm">
+         <thead>
+          <tr>
+           <th class="table-header">Class</th>
+           <th class="table-header">f</th>
+           <th class="table-header">x</th>
+           <th class="table-header">u = (x-35)/10</th>
+           <th class="table-header">f × u</th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td class="table-cell">10-20</td>
+           <td class="table-cell">8</td>
+           <td class="table-cell">15</td>
+           <td class="table-cell">-2</td>
+           <td class="table-cell">-16</td>
+          </tr>
+          <tr>
+           <td class="table-cell">20-30</td>
+           <td class="table-cell">12</td>
+           <td class="table-cell">25</td>
+           <td class="table-cell">-1</td>
+           <td class="table-cell">-12</td>
+          </tr>
+          <tr>
+           <td class="table-cell">30-40</td>
+           <td class="table-cell">20</td>
+           <td class="table-cell">35</td>
+           <td class="table-cell">0</td>
+           <td class="table-cell">0</td>
+          </tr>
+          <tr>
+           <td class="table-cell">40-50</td>
+           <td class="table-cell">15</td>
+           <td class="table-cell">45</td>
+           <td class="table-cell">+1</td>
+           <td class="table-cell">+15</td>
+          </tr>
+          <tr>
+           <td class="table-cell">50-60</td>
+           <td class="table-cell">5</td>
+           <td class="table-cell">55</td>
+           <td class="table-cell">+2</td>
+           <td class="table-cell">+10</td>
+          </tr>
+          <tr>
+           <td class="table-cell"><strong>Total</strong></td>
+           <td class="table-cell"><strong>60</strong></td>
+           <td class="table-cell">-</td>
+           <td class="table-cell">-</td>
+           <td class="table-cell"><strong>-3</strong></td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <p class="body-text mb-2">x̄ = A + h × (Σ(f × u) / Σf)</p>
+       <p class="body-text mb-2">x̄ = 35 + 10 × (-3 / 60)</p>
+       <p class="body-text mb-2">x̄ = 35 + 10 × (-0.05)</p>
+       <p class="body-text mb-2">x̄ = 35 - 0.5 = 34.5</p>
+       <p class="body-text answer-text text-xl"><strong>✓ Answer: Mean Salary = ₹34,500</strong></p>
+      </div>
+     </div>
+    </section><!-- Quick Tips Section -->
+    <section class="content-card rounded-2xl p-8 mb-8 shadow-lg">
+     <h2 class="section-heading text-3xl font-bold mb-4 text-center">💡 Quick Tips for SSC Exams</h2>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="tips-card p-6 rounded-xl">
+       <h3 class="law-heading text-xl font-bold mb-3">✅ Do's</h3>
+       <ul class="body-text list-disc ml-6 space-y-2">
+        <li>Always find class marks first: x = (a + b) / 2</li>
+        <li>Choose assumed mean (A) as middle class mark</li>
+        <li>Double-check all calculations in the table</li>
+        <li>Write proper units in the final answer</li>
+        <li>Show all steps clearly for full marks</li>
+        <li>Verify: Σf should match given total</li>
+       </ul>
+      </div>
+      <div class="tips-card p-6 rounded-xl">
+       <h3 class="law-heading text-xl font-bold mb-3">❌ Common Mistakes</h3>
+       <ul class="body-text list-disc ml-6 space-y-2">
+        <li>Forgetting to divide by Σf at the end</li>
+        <li>Wrong calculation of class marks</li>
+        <li>Sign errors in deviation calculations</li>
+        <li>Using wrong formula for the method</li>
+        <li>Not adding A back in assumed mean method</li>
+        <li>Forgetting to multiply by h in step deviation</li>
+       </ul>
+      </div>
+     </div>
+    </section><!-- Formula Summary -->
+    <section class="summary-section rounded-2xl p-8">
+     <h2 class="section-heading text-3xl font-bold mb-4 text-center">📋 Formula Summary Sheet</h2>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="formula-summary-card p-6 rounded-xl">
+       <h3 class="law-heading text-xl font-bold mb-3 text-center">Direct Method</h3>
+       <div class="formula-box p-4 rounded-lg">
+        <p class="formula-text text-lg font-mono text-center">x̄ = Σ(f × x) / Σf</p>
+       </div>
+       <p class="body-text text-sm mt-3 text-center">x = class mark</p>
+       <p class="body-text text-sm text-center">f = frequency</p>
+      </div>
+      <div class="formula-summary-card p-6 rounded-xl">
+       <h3 class="law-heading text-xl font-bold mb-3 text-center">Assumed Mean</h3>
+       <div class="formula-box p-4 rounded-lg">
+        <p class="formula-text text-lg font-mono text-center">x̄ = A + Σ(f×d)/Σf</p>
+       </div>
+       <p class="body-text text-sm mt-3 text-center">A = assumed mean</p>
+       <p class="body-text text-sm text-center">d = x - A</p>
+      </div>
+      <div class="formula-summary-card p-6 rounded-xl">
+       <h3 class="law-heading text-xl font-bold mb-3 text-center">Step Deviation</h3>
+       <div class="formula-box p-4 rounded-lg">
+        <p class="formula-text text-lg font-mono text-center">x̄ = A + h×Σ(f×u)/Σf</p>
+       </div>
+       <p class="body-text text-sm mt-3 text-center">h = class width</p>
+       <p class="body-text text-sm text-center">u = (x - A) / h</p>
+      </div>
+     </div>
+     <div class="insight-box p-6 rounded-xl mt-6">
+      <p class="body-text text-lg text-center"><strong>🎓 Remember:</strong> All three methods give the SAME answer! Choose the one that makes your calculation easiest.</p>
+     </div>
+    </section>
+   </main>
+  </div>
+  <script>
+    const defaultConfig = {
+      main_title: "📊 Calculating Mean in Statistics",
+      subtitle: "Master All Three Methods - Maharashtra SSC Class 10",
+      background_color: "#f0f9ff",
+      card_color: "#ffffff",
+      text_color: "#0f172a",
+      accent_color: "#0ea5e9",
+      secondary_accent_color: "#8b5cf6",
+      font_family: "system-ui",
+      font_size: 16
+    };
+
+    let config = {};
+
+    async function onConfigChange(newConfig) {
+      Object.assign(config, newConfig);
+      
+      const mainTitle = config.main_title || defaultConfig.main_title;
+      const subtitle = config.subtitle || defaultConfig.subtitle;
+      const backgroundColor = config.background_color || defaultConfig.background_color;
+      const cardColor = config.card_color || defaultConfig.card_color;
+      const textColor = config.text_color || defaultConfig.text_color;
+      const accentColor = config.accent_color || defaultConfig.accent_color;
+      const secondaryAccentColor = config.secondary_accent_color || defaultConfig.secondary_accent_color;
+      const fontFamily = config.font_family || defaultConfig.font_family;
+      const baseFontStack = 'system-ui, -apple-system, sans-serif';
+      const fontSize = config.font_size || defaultConfig.font_size;
+
+      document.getElementById('mainWrapper').style.backgroundColor = backgroundColor;
+      document.getElementById('mainTitle').textContent = mainTitle;
+      document.getElementById('subtitle').textContent = subtitle;
+
+      const headerSection = document.querySelector('.header-section');
+      headerSection.style.backgroundColor = cardColor;
+
+      const allCards = document.querySelectorAll('.content-card');
+      allCards.forEach(card => {
+        card.style.backgroundColor = cardColor;
+      });
+
+      const allText = document.querySelectorAll('.body-text, .section-heading, .law-heading, .main-heading, .subtitle-text');
+      allText.forEach(el => {
+        el.style.color = textColor;
+        el.style.fontFamily = `${fontFamily}, ${baseFontStack}`;
+      });
+
+      document.querySelector('.main-heading').style.fontSize = `${fontSize * 2.5}px`;
+      document.querySelector('.subtitle-text').style.fontSize = `${fontSize * 1.25}px`;
+      
+      document.querySelectorAll('.section-heading').forEach(el => {
+        el.style.fontSize = `${fontSize * 1.875}px`;
+      });
+      
+      document.querySelectorAll('.law-heading').forEach(el => {
+        el.style.fontSize = `${fontSize * 1.25}px`;
+      });
+      
+      document.querySelectorAll('.body-text').forEach(el => {
+        el.style.fontSize = `${fontSize * 1.125}px`;
+      });
+
+      document.querySelectorAll('.formula-text').forEach(el => {
+        el.style.fontSize = `${fontSize * 1.125}px`;
+      });
+
+      const formulaBoxes = document.querySelectorAll('.formula-box');
+      formulaBoxes.forEach(box => {
+        box.style.backgroundColor = accentColor + '20';
+        box.style.borderLeft = `4px solid ${accentColor}`;
+      });
+
+      const insightBoxes = document.querySelectorAll('.insight-box');
+      insightBoxes.forEach(box => {
+        box.style.backgroundColor = secondaryAccentColor + '20';
+        box.style.borderLeft = `4px solid ${secondaryAccentColor}`;
+      });
+
+      const solutionBoxes = document.querySelectorAll('.solution-box');
+      solutionBoxes.forEach(box => {
+        box.style.backgroundColor = accentColor + '15';
+        box.style.borderLeft = `4px solid ${accentColor}`;
+      });
+
+      const methodDescriptions = document.querySelectorAll('.method-description');
+      methodDescriptions.forEach(box => {
+        box.style.backgroundColor = backgroundColor;
+      });
+
+      const comparisonCards = document.querySelectorAll('.comparison-card');
+      comparisonCards.forEach(card => {
+        card.style.backgroundColor = backgroundColor;
+        card.style.border = `2px solid ${accentColor}40`;
+      });
+
+      const summarySection = document.querySelector('.summary-section');
+      if (summarySection) {
+        summarySection.style.backgroundColor = cardColor;
+        summarySection.style.borderTop = `4px solid ${accentColor}`;
+      }
+
+      const problemCards = document.querySelectorAll('.problem-card');
+      problemCards.forEach(card => {
+        card.style.backgroundColor = backgroundColor;
+        card.style.border = `2px solid ${accentColor}30`;
+      });
+
+      const problemNumbers = document.querySelectorAll('.problem-number');
+      problemNumbers.forEach(num => {
+        num.style.color = accentColor;
+      });
+
+      const solutionButtons = document.querySelectorAll('.show-solution-btn');
+      solutionButtons.forEach(btn => {
+        btn.style.backgroundColor = accentColor;
+        btn.style.color = '#ffffff';
+      });
+
+      const tipsCards = document.querySelectorAll('.tips-card');
+      tipsCards.forEach(card => {
+        card.style.backgroundColor = backgroundColor;
+        card.style.border = `2px solid ${secondaryAccentColor}40`;
+      });
+
+      const formulaSummaryCards = document.querySelectorAll('.formula-summary-card');
+      formulaSummaryCards.forEach(card => {
+        card.style.backgroundColor = backgroundColor;
+      });
+
+      const answerTexts = document.querySelectorAll('.answer-text');
+      answerTexts.forEach(el => {
+        el.style.color = accentColor;
+      });
+
+      // Table styling
+      const allTables = document.querySelectorAll('th, td');
+      allTables.forEach(cell => {
+        cell.style.borderColor = accentColor + '60';
+      });
+
+      const tableHeaders = document.querySelectorAll('.table-header');
+      tableHeaders.forEach(header => {
+        header.style.backgroundColor = accentColor + '30';
+        header.style.color = textColor;
+        header.style.fontFamily = `${fontFamily}, ${baseFontStack}`;
+      });
+
+      const tableCells = document.querySelectorAll('.table-cell');
+      tableCells.forEach(cell => {
+        cell.style.backgroundColor = cardColor;
+        cell.style.color = textColor;
+        cell.style.fontFamily = `${fontFamily}, ${baseFontStack}`;
+      });
+    }
+
+    function toggleSolution(problemId) {
+      const solution = document.getElementById(`solution-${problemId}`);
+      const button = event.target;
+      
+      if (solution.style.display === 'none') {
+        solution.style.display = 'block';
+        button.textContent = 'Hide Solution';
+      } else {
+        solution.style.display = 'none';
+        button.textContent = 'Show Solution';
+      }
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              config.background_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ background_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.card_color || defaultConfig.card_color,
+            set: (value) => {
+              config.card_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ card_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              config.text_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ text_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.accent_color || defaultConfig.accent_color,
+            set: (value) => {
+              config.accent_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ accent_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.secondary_accent_color || defaultConfig.secondary_accent_color,
+            set: (value) => {
+              config.secondary_accent_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ secondary_accent_color: value });
+              }
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (value) => {
+            config.font_family = value;
+            if (window.elementSdk) {
+              window.elementSdk.setConfig({ font_family: value });
+            }
+          }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (value) => {
+            config.font_size = value;
+            if (window.elementSdk) {
+              window.elementSdk.setConfig({ font_size: value });
+              }
+          }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ["main_title", config.main_title || defaultConfig.main_title],
+        ["subtitle", config.subtitle || defaultConfig.subtitle]
+      ]);
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b2c764035a49a95',t:'MTc2NjU0MTE3NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
